@@ -1,3 +1,4 @@
+
 header {
     background-color: gray;
     display: flex;
@@ -15,60 +16,36 @@ nav {
     list-style: none;
     background-color: antiquewhite;
     padding: 15px;
-    font: gray bold 1.4em;
     text-align: center;
     text-decoration: none;
 }
-
-
-.menu{
-    list-style:none;
-    border:1px solid #c0c0c0;
-    float:left;
+    nav li {
+        display: inline-block;
+        position: relative;
+        padding-left: 20px;
+        text-decoration: none;  
     }
-    .menu li{
-        position:relative;
-        float: center;
-        }
-    
-        .menu li a {
-            color:#333; 
-            text-decoration:none; 
-            padding:5px 10px; 
-            display:block;
-        }
 
-        .menu li a:hover{
-        background:#333;
-        color:#fff;
-        box-shadow: 0px;
-        -moz-box-shadow:0 3px 10px 0 #CCC;
-        -webkit-box-shadow:0 3px 10px 0 #ccc;
-        text-shadow:0px 0px 5px #fff;
-        }
-
-        .menu li  ul{
-            position:absolute;
-            top:25px;
-            left:0;
-            background-color:#fff;
-            display:none;
-            }
-        .menu li:hover ul, .menu li.hover ul{
-            display:block;
-        }
-
-            .menu li ul li{
-                border:1px solid #c0c0c0;
-                display:block;
-                width:150px;
-                }
-article h2 {
+nav li a {
+    font-weight: bold;
+    color: black;
+    display: block;
+    padding: 10px;
+    text-decoration: none;  
+}
+        
+article h1 {
     text-align: center;
 }
 
-article h3 {
+article h2 {
     text-align: center;
+    padding-top: 20px;
+}
+
+p {
+    padding-left: 5px;
+    font-size: 1.3em;
 }
 
 #contato {
@@ -84,4 +61,21 @@ article h3 {
     text-align: center;
 
     
+}
+
+.printProjetos {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+.linksProjetos {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    border: 3px solid gray;
+    background-color: blanchedalmond;
 }
