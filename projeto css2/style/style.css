@@ -25,7 +25,7 @@ a:link, a:visited {
 a:hover {
     text-decoration: underline;
 }
-#areaMenu a:link, a:visited {
+#areaMenu a:link,#areaMenu a:visited {
     color: #FFF;
    
 }
@@ -50,6 +50,11 @@ h1 {
 h2 {
     color: #f7b600;
 }
+h3 {
+    color: #565656;
+    background: #CCC;
+    padding: 5px;    
+}
 #areaPostagens {
     width: 660px;
     float: left;
@@ -62,12 +67,21 @@ h2 {
     margin-bottom: 10px;
 }
 .postagens {
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 20px;
 }
 #areaLateral {
     width: 240px;
     float: right;
+}
+.conteudoLateral {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.postagemLateral {
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px solid #565656;
 }
 #rodape {
     clear: both;
