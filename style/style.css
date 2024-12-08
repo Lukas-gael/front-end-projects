@@ -36,6 +36,10 @@ nav li a {
     display: block;
     padding: 10px;
     text-decoration: none;  
+}
+.selecaoMenuSuperior {
+    background: gray;
+    color: white;
 }   
 article h1 {
     text-align: center;
