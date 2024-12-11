@@ -53,6 +53,7 @@ p {
     padding-top: 25px;
     padding-bottom: 10px;
     font-size: 1.3em;
+    margin-top: 50px;
 }
 .printProjetos {
     width: 500px;
@@ -61,9 +62,19 @@ p {
     justify-content: center;
     align-items: center; 
 }
+.multifotos {
+    float: left;
+    padding: 5px;
+   
+}
+.limpeza {
+    display: block;
+    clear: both;
+    width: 205px;
+}
 .linksProjetos {
-    padding: auto;
-    margin-bottom: auto;
+    padding: 8px;
+    margin-bottom: 30px;
     text-decoration: none;
     color: black;
     font-size: 1.2em;
@@ -72,6 +83,8 @@ p {
 }
 .linksProjetos a {
     margin-bottom: auto;
+    
+
 }
 footer{
     margin-top: auto;
