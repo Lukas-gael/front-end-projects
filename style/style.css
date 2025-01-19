@@ -4,39 +4,7 @@ body {
     min-height: 100vh; 
     background-color: azure;
 }
-header {
-    background-color: gray;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; 
-}
 
-#logoCabecalho {
-    width: 600px;
-  
-}
-
-nav {
-    list-style: none;
-    background-color: antiquewhite;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-}
-    nav li {
-        display: inline-block;
-        position: relative;
-        padding-left: 20px;
-        text-decoration: none;  
-    }
-nav li a {
-    font-weight: bold;
-    color: black;
-    display: block;
-    padding: 10px;
-    text-decoration: none;  
-}
 .selecaoMenuSuperior {
     background: gray;
     color: white;
@@ -88,7 +56,11 @@ p {
 }
 footer{
     margin-top: auto;
-    padding-top: 15px;
+    background: #000;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+    color: white;
+    text-align: center;
 }
 #contato {
     width: 100%;
@@ -99,4 +71,8 @@ footer{
     background-color: antiquewhite;
     padding: 20px;
     text-align: center;
+}
+
+.box {
+    max-height: 250px;
 }

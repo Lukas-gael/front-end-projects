@@ -1,62 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Udemy CSS</title>
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/cssPageStyle.css">
-</head>
-<body>
-    <header>
-    <img id="logoCabecalho" src="images/udemy.png" alt="imagem logo do Curso">
-    </header>
-        <nav>
-            <ul class="navegacao"></ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="paginaHtml.html">Html</a></li>
-                <li><a class="selecaoMenuSuperior" href="paginaCSS.html">CSS</a></li>
-                <li><a href="bootstrap.html">Bootstrap</a></li>
-                <li><a href="contato.html">Contact</a></li>
-            </ul>
-        </nav>		
-    </header>
-    <article>
-        <section id="firstCourse"> <!--css first course-->
-            <h2>Projetos CSS</h2><br><br><br>
-            <p>My inaugural CSS study project was the development of a website for a fictional model.</p><br><br>
-            <img class="printProjetos" src="images/projetoAnnaBella.png" alt="imagem tirada da tela inicial do site da modelo ficticia Anna Bella"> <br><br>
-            <a class="linksProjetos" href="projetos css/projeto css1/projetoCSS1.html">Click here to open the site</a>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no">
+        <title>CSS Page</title>
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <![endif]-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/4fe58e556e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style/normalize.css">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+              <div class="container">
+                    <a href="projeto bootstrap 3.html" class="navbar-brand">
+                        <h3>Front-End</h3>
+                    </a>
+                    
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#headerNavbar">
+                        <i class="fa-solid fa-bars text-white"></i>
+                    </button>
 
-            <p>My second CSS study project was the development of a homepage for a technology website</p><br><br>
-            <img class="printProjetos" src="images/Projeto TecBlog.png" alt="imagem tirada da tela inicial do site ficticio TecBlog"> <br><br>
-            <a class="linksProjetos" href="projetos css/projeto css2/projetoCSS2.html">Click here to open the site</a>
+                    <div class="collapse navbar-collapse" id="headerNavbar">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="paginaHtml.html" class="nav-link">HTML</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="paginaCSS.html" class="nav-link active">CSS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="bootstrap.html" class="nav-link">Bootstrap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contato.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+               </div>
+            </nav>	    	
+        </header>
 
-            <p>Third CSS project: Designing a homepage and two extra pages featuring multi-column or single-column layouts, utilizing a fixed-width approach.</p><br><br>
-            <img class="printProjetos multifotos" src="images/projetoNoticia1.png" alt="imagem tirada da tela inicial de um site de noticias ficticio"> 
-            <img class="printProjetos multifotos" src="images/projetoNoticia2.png" alt="imagem tirada de uma segunda aba do site de noticias"> 
-            <img class="printProjetos multifotos" src="images/projetoNoticia3.png" alt="imagem tirada de uma terceira aba do site de noticias"> <br><br>
-            <a class="linksProjetos limpeza" href="projetos css/projeto css3/projeto css3.html">Click here to open the site</a>
+        <h1 class="display-2 text-center">Projetos CSS</h1>
 
-            <p>The fourth project in my study will focus on creating a homepage that employs a fluid layout</p><br><br>
-            <img class="printProjetos" src="images/ProjetoChaleHotel.png" alt="imagem tirada da home page de um chalé ficticio"> <br><br>
-            <a class="linksProjetos" href="projetos css/projeto css4/projeto css4.html">Click here to open the site</a>
-            
-            <p>The fifth project in my study will focus on creating a parallax effect using CSS exclusively.</p><br><br>
-            <img class="printProjetos multifotos" src="images/ProjetoParallax1.png" alt=""> <br><br>
-            <img class="printProjetos multifotos" src="images/ProjetoParallax2.png" alt=""> <br><br>
-            <a class="linksProjetos limpeza" href="projetos css/projeto css5/projeto css5.html">Click here to open the site</a>
-        
-            <p>The sixth and final CSS project in our first course will involve creating a homepage for a fictional museum, utilizing the header, footer, article, section, and aside tags..</p><br><br>
-            <img class="printProjetos" src="images/projetoMuseuNacional.png" alt="imagem retirada da home page ficticia do museu nacional"> <br><br>
-            <a class="linksProjetos limpeza" href="projetos css/projeto css6/projeto css6.html">Click here to open the site</a>
-            
-            <h3 class="endCourse">----End of First Course-----</h3>
+        <section> <!--Projeto 1-->
+            <div class="container "> 
+                <div class="row py-3 border-bottom border-dark">
+                    <div class="col-md-6">
+                        <div>
+                                <img class="img-fluid" src="images/projetoAnnaBella.png" alt="imagem tirada da tela inicial do site da modelo ficticia Anna Bella">
+                        </div>    
+                    </div>
+                    <div class="col-md-6">
+                        <div  class="text-sm-center">
+                            <h2>My first CSS study project was the development of a website for a fictional model.</h2>
+                            <a href="projetos css/projeto css1/projetoCSS1.html" class="btn btn-primary">Open the site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-    </article>
-    <footer>
-        <p id="contato">E-mail:Lukasgael.live@gmail.com</p>
-    </footer>
-</body>
+
+        <section> <!--Projeto 2-->
+            <div class="container"> 
+                <div class="row py-3 border-bottom border-dark">
+                    <div class="col-md-6 d-none d-md-block">
+                        <div  class="text-sm-center">
+                            <h2>My second CSS study project was the development of a homepage for a technology website</h2>
+                            <a href="projetos css/projeto css2/projetoCSS2.html" class="btn btn-primary">Open the site</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="row">
+                        <div class="">
+                            <img class="img-fluid" src="images/Projeto TecBlog.png" alt="imagem tirada da tela inicial do site ficticio TecBlog">
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-md-none d-sm-block">
+                        <div  class="text-sm-center">
+                            <h2>My second CSS study project was the development of a homepage for a technology website</h2>
+                            <a href="projetos css/projeto css4/projeto css4.html" class="btn btn-primary">Open the site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section> <!--Projeto 3-->
+            <div class="container"> 
+                <div class="row  py-3 border-bottom border-dark">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6 d-none d-md-block">
+                                <img class="img-fluid" src="images/projetoNoticia1.png" alt="imagem tirada da tela inicial de um site de noticias ficticio">
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="images/projetoNoticia2.png" alt="imagem tirada de uma segunda aba do site de noticias">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div  class="text-sm-center">
+                            <h2>Third CSS project: Designing a homepage and two extra pages featuring multi-column or single-column layouts, utilizing a fixed-width approach.</h2>
+                            <a href="projetos css/projeto css3/projeto css3.html" class="btn btn-primary">Open the site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <section> <!--Projeto 4-->
+            <div class="container"> 
+                <div class="row py-3 border-bottom border-dark">
+                    <div class="col-md-6 d-none d-md-block">
+                        <div  class="text-sm-center">
+                            <h2>The fourth project in my study will focus on creating a homepage that employs a fluid layout.</h2>
+                            <a href="projetos css/projeto css4/projeto css4.html" class="btn btn-primary">Open the site</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="row">
+                        <div class="">
+                            <img class="img-fluid" src="images/ProjetoChaleHotel.png" alt="imagem tirada da home page de um chalé ficticio">
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-md-none d-sm-block">
+                        <div  class="text-sm-center">
+                            <h2>The fourth project in my study will focus on creating a homepage that employs a fluid layout.</h2>
+                            <a href="projetos css/projeto css4/projeto css4.html" class="btn btn-primary">Open the site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section> <!--Projeto 5-->
+            <div class="container"> 
+                <div class="row  py-3 border-bottom border-dark">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6 d-none d-md-block">
+                                <img class="img-fluid" src="images/ProjetoParallax1.png" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="images/ProjetoParallax2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div  class="text-sm-center">
+                            <h2>The fifth project in my study will focus on creating a parallax effect using CSS exclusively.</h2>
+                            <a href="projetos css/projeto css5/projeto css5.html" class="btn btn-primary">Open the site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section> <!--Projeto 6-->
+            <div class="container"> 
+                <div class="row py-3 border-bottom border-dark">
+                    <div class="col-md-6 d-none d-md-block">
+                        <div  class="text-sm-center">
+                            <h2>The sixth and final CSS project in our first course will involve creating a homepage for a fictional museum, utilizing the header, footer, article, section, and aside tags.</h2>
+                            <a href="projetos css/projeto css6/projeto css6.html" class="btn btn-primary">Open the site</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="row">
+                        <div class="">
+                            <img class="img-fluid" src="images/projetoMuseuNacional.png" alt="imagem retirada da home page ficticia do museu nacion">
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-md-none d-sm-block">
+                        <div  class="text-sm-center">
+                            <h2>The sixth and final CSS project in our first course will involve creating a homepage for a fictional museum, utilizing the header, footer, article, section, and aside tags.</h2>
+                            <a href="projetos css/projeto css6/projeto css6.html" class="btn btn-primary">Open the site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+       
+        <footer>
+            <h4>E-mail: Lukasgael.live@gmail.com</h4>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
 </html>
