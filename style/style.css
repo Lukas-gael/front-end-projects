@@ -1,32 +1,35 @@
+/* estilização base */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
     background-color: azure;
+    height: 100%;
 }
-header {
-    
-}
-
 nav {
     list-style: none;
     background-color: #1c1b19;
     padding: 15px;
-    text-align: right;
     text-decoration: none;
-
+    position: relative;
+    text-align: right;
 }
-    nav li {
-        display: inline-block;
-        position: relative;
-        padding-left: 5px;
-        text-decoration: none;  
+nav a img {
+    height: 25px;
+    position: absolute;
+    left: 35px;   
+}
+nav li {
+    display: inline-block;
+    padding-left: 5px;
+    text-decoration: none;   
     }
 nav li a {
     color: #edeae4;
     display: block;
     padding: 10px;
     text-decoration: none;  
+    position: relative;
 }
 nav li a:hover {
     color: gray;
@@ -34,55 +37,10 @@ nav li a:hover {
 .selecaoMenuSuperior {
    color: darkgray;
 }   
-
-article h1 {
-    text-align: center;
-}
-article h2 {
-    text-align: center;
-    padding-top: 20px;
-}
-p {
-    padding-left: 5px;
-    padding-top: 25px;
-    padding-bottom: 10px;
-    font-size: 1.3em;
-    margin-top: 50px;
-}
-.printProjetos {
-    width: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; 
-}
-.multifotos {
-    float: left;
-    padding: 5px;
-   
-}
-.limpeza {
-    display: block;
-    clear: both;
-    width: 205px;
-}
-.linksProjetos {
-    padding: 8px;
-    margin-bottom: 30px;
-    text-decoration: none;
-    color: black;
-    font-size: 1.2em;
-    border: 3px solid gray;
-    background-color: blanchedalmond;
-}
-.linksProjetos a {
-    margin-bottom: auto;
-    
-
-}
 footer{
     margin-top: auto;
-    padding-top: 15px;
+    max-height: 100%;
+    overflow: hidden;
 }
 #rodape {
     width: 100%;
@@ -91,6 +49,134 @@ footer{
     font-size: 1.2em;
     justify-content: center;
     background-color:  #1c1b19;
-    padding: 20px;
+    padding: 10px;
+    text-align: center;  
+}
+
+/* estilização index */ 
+
+/* Como foi dito na pagina eu fiz ela mais simples por não ter muito o que acrescentar */
+.textos{
     text-align: center;
+    font-size: 1.4em;
+    max-width: fit-content;
+}
+.textos h2 {
+    padding: 30px;
+}
+.textos p {
+    padding: 45px;
+}
+
+/* estilização pagina de formação */
+
+.conteudo {     /*apenas pra criação de duas colunas */
+    display: flex;
+}
+hr {
+    margin-top: 50px;
+}
+#cursosatuais { /* simetria é bom porém tira divide o destaque, então é melhor mesmo que pouca coisa ter uma grade maior que outra */
+    float: left;
+    width: 60%;
+    padding: 15px 0;
+}
+#certificados {
+    float: right;
+    width: 40%;
+    padding: 20px 0;
+}
+.cursos h2 {
+    text-align: center;
+    font-size: 1.8em;
+    padding: 40px;
+}
+.cursos p {
+    padding: 20px 35px;
+    text-align: center;
+    font-size: 1.4em;
+}
+.cursos  a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 0 0 20px 0;
+}
+.cursos a span {  /* até eu lembrar de usar span foi um sofrimento, pois estava crinado com button o que complica muito o processo */ 
+    background-color: #1c1b19;
+    color: #edeae4;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/*estilização pagina de portifolio */
+
+.portifolioTitulo {
+    text-align: center;
+    font-size: 1.8em;
+    padding: 40px;
+}
+.projetos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: left; 
+    padding: 25px;
+}
+.projetos img{ 
+    height: 200px;
+    padding: 55px;
+}
+.projetos p {
+    padding: 20px 35px;
+    text-align: start;
+    font-size: 1.4em;     
+}
+.projetos a {
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 30px 0 20px 0;
+}
+.projetos a span {
+    background-color: #1c1b19;
+    color: #edeae4;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 8px;
+}
+.portifolioColuna {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* estilização pagina de contatos */
+
+
+
+.formulario {
+    display: flex;
+    width: 60%;
+}
+
+.formulario form { /* tive certa dificuldade pra resolver essa parte, estava formatando a classe inteira e estava saindo errado, levei boas 2h pra concertar isso aqui */ 
+   display: flex;
+   flex-direction: column;
+   float: left;
+   gap: 10px;
+   padding-left: 5%;
+}
+.formulario input {
+    font-size: 1.2em;
+    width: 400px;
+}
+
+.icoFuncional {
+    display: flex;
+    float: right;
+    width: 35%;
+    flex-direction: column;
 }

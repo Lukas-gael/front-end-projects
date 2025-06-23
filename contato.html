@@ -18,24 +18,42 @@
           </ul>
       </nav>
     </header>
-    <article>
-        <h2>Contact Me</h2><br><br>
-        <div align="center">
-            <a href="https://www.instagram.com/lukasgael/" target="_blank">
-              <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
-            </a>
-            <a href="https://www.twitch.tv/lukasgael" target="_blank">
-              <img src="https://img.shields.io/static/v1?message=Twitch&logo=twitch&label=&color=9146FF&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="twitch logo"  />
-            </a>
-             <a href="mailto:lukasgael.live@gmail.com" target="_blank">
-            <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
-             </a>
-            <a href="https://www.linkedin.com/in/lucasgael/" target="_blank">
-              <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
-            </a>
-          </div>
-        </article>
+    <h2 class="portifolioTitulo">Entre em contato</h2><br><br>
+    <div class="conteudo"> <!--tive que criar isso para criar as partes divididas-->
+      <div class="formulario"> <!--Queria fazer um formulario que realmente enviasse os arquivos porém não consegui com html e css puro e criar um script de js complicaria muito o projeto-->
+        <form method="POST">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Insira seu nome aqui" required>
 
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+          <label for="assunto">Assunto:</label>
+          <input type="text" id="assunto" name="assunto" placeholder="Por favor especifique o assunto" required>
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui" rows="5"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div> <!--Essa parte eu adicionei apaenas para ter uma parte realmente funcional-->
+          <div class="icoFuncional">
+              <a href="https://www.instagram.com/lukasgael/" target="_blank">
+                <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
+              </a>
+              <a href="https://www.twitch.tv/lukasgael" target="_blank">
+                <img src="https://img.shields.io/static/v1?message=Twitch&logo=twitch&label=&color=9146FF&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="twitch logo"  />
+              </a>
+              <a href="mailto:lukasgael.live@gmail.com" target="_blank">
+              <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
+              </a>
+              <a href="https://www.linkedin.com/in/lucasgael/" target="_blank">
+                <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
+              </a>
+            </div>
+          </div>
+      </div>
         
 </body>
 </html> 
